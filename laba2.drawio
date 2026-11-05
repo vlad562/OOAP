@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" pages="5">
   <diagram name="Страница-4" id="yKD3jtkE07PHOLqcUeoo">
-    <mxGraphModel dx="762" dy="1068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2565" dy="1396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -227,11 +227,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jm8asW1zhdjAwQ8rFC5p" name="Страница-8">
-    <mxGraphModel dx="1054" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1132" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="VxISl0HjEk775O6nYciG-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=280;height=30;" value="sd Task.assignPerform(candidate: Performer)" vertex="1">
+        <mxCell id="VxISl0HjEk775O6nYciG-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=310;height=20;" value="sd Task.assignPerform(candidate: Performer): Boolean" vertex="1">
           <mxGeometry height="590" width="720" x="80" y="210" as="geometry" />
         </mxCell>
         <mxCell id="VxISl0HjEk775O6nYciG-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="CurrentTask:Task" vertex="1">
@@ -249,7 +249,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VxISl0HjEk775O6nYciG-11" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="candidate:&lt;div&gt;Performer&lt;/div&gt;" vertex="1">
-          <mxGeometry height="530" width="100" x="290" y="250" as="geometry" />
+          <mxGeometry height="550" width="100" x="290" y="250" as="geometry" />
         </mxCell>
         <mxCell id="VxISl0HjEk775O6nYciG-12" parent="VxISl0HjEk775O6nYciG-11" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="40" width="10" x="45" y="60" as="geometry" />
@@ -273,7 +273,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="OZBjHZ4u3K76YWFE6lji-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="role:Role" vertex="1">
-          <mxGeometry height="530" width="100" x="430" y="250" as="geometry" />
+          <mxGeometry height="550" width="100" x="430" y="250" as="geometry" />
         </mxCell>
         <mxCell id="754WW-6qvPla6kOQSNKo-2" parent="OZBjHZ4u3K76YWFE6lji-1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="80" width="10" x="45" y="120" as="geometry" />
@@ -312,7 +312,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="754WW-6qvPla6kOQSNKo-8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="notificate:&lt;div&gt;Notifications&lt;/div&gt;" vertex="1">
-          <mxGeometry height="157" width="100" x="630" y="600" as="geometry" />
+          <mxGeometry height="200" width="100" x="630" y="600" as="geometry" />
         </mxCell>
         <mxCell id="mti6M91gT9OCoIRiRG2V-2" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=215;height=40;" value="loop [for each performer in performers]" vertex="1">
           <mxGeometry height="150" width="565" x="175" y="580" as="geometry" />
@@ -362,15 +362,25 @@
         <mxCell id="YnPUFQFJActpJWPodyJ5-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="new()" vertex="1">
           <mxGeometry height="30" width="60" x="420" y="600" as="geometry" />
         </mxCell>
+        <mxCell id="u3zmGbfbgLItK6W9cJ3N-2" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=open;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;defaultLabelBackgroundColor=page;dashed=1;endFill=0;" value="">
+          <mxGeometry relative="1" x="-0.0474" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="555" />
+              <mxPoint x="235" y="580" />
+            </Array>
+            <mxPoint x="205" y="555" as="sourcePoint" />
+            <mxPoint x="199.78" y="577.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="1U51zoZDTs7gsu0FSzXE" name="Страница-9">
-    <mxGraphModel dx="1624" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="943" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="VxU9P1A7AgaQOUxmuD6W-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=210;height=30;" value="sd Task.createComment(text, author)" vertex="1">
+        <mxCell id="VxU9P1A7AgaQOUxmuD6W-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=330;height=30;" value="sd Task.createComment(text: String, author: Perfomer): Boolean&amp;nbsp;" vertex="1">
           <mxGeometry height="350" width="700" x="70" y="400" as="geometry" />
         </mxCell>
         <mxCell id="goRBeEIoTGwJKh4yiNQb-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="task:Task" vertex="1">
@@ -406,12 +416,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="goRBeEIoTGwJKh4yiNQb-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="comment:&lt;div&gt;Comments&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="100" x="350" y="435" as="geometry" />
+          <mxGeometry height="315" width="100" x="350" y="435" as="geometry" />
         </mxCell>
         <mxCell id="goRBeEIoTGwJKh4yiNQb-10" parent="goRBeEIoTGwJKh4yiNQb-9" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
           <mxGeometry height="80" width="10" x="45" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="goRBeEIoTGwJKh4yiNQb-12" edge="1" parent="1" source="goRBeEIoTGwJKh4yiNQb-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;defaultLabelBackgroundColor=page;" target="goRBeEIoTGwJKh4yiNQb-2" value="res">
+        <mxCell id="goRBeEIoTGwJKh4yiNQb-12" edge="1" parent="1" source="goRBeEIoTGwJKh4yiNQb-10" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=sequenceEdgeStyle;libavoidRouting=0;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;defaultLabelBackgroundColor=page;" target="goRBeEIoTGwJKh4yiNQb-2" value="">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="347.5" y="680.0000000000011" />
@@ -449,11 +459,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0sJDyToVxB_tuR9-8WLo" name="Страница-10">
-    <mxGraphModel dx="1225" dy="1281" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1132" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fAFATnoW7Xb1c1CiLNjB-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=551;height=20;" value="sd Controller.createTask(title: String, desc: String, author: Performer, deadline: String, status: string)" vertex="1">
+        <mxCell id="fAFATnoW7Xb1c1CiLNjB-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=591;height=30;" value="sd Controller.createTask(title: String, desc: String, author: Performer, deadline: String, status: string): Boolean" vertex="1">
           <mxGeometry height="410" width="620" x="119" y="320" as="geometry" />
         </mxCell>
         <mxCell id="qCJo1z8eQi3f-Noh-8wB-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="TaskController:&lt;div&gt;Controller&lt;/div&gt;" vertex="1">
@@ -531,7 +541,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="0YGUCH0Da0o_WIioXj7q" name="Страница-11">
-    <mxGraphModel dx="1201" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1132" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
