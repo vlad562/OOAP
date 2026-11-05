@@ -1,3 +1,4 @@
+#nullable disable
 using System;
 using System.Collections.Generic;
 
@@ -67,7 +68,7 @@ namespace TaskTrackerApp
 
         public HistoryOfTransitions(string newStatus, Performer author)
         {
-            OldStatus = "None"; 
+            OldStatus = "None";
             NewStatus = newStatus;
             Author = author;
         }
@@ -89,7 +90,6 @@ namespace TaskTrackerApp
         public string GetTimeCreated() => timeCreated;
     }
 
-
     public class Notifications
     {
         public Comments TextComment { get; set; }
@@ -103,13 +103,10 @@ namespace TaskTrackerApp
         public string Send(Performer performer, string message)
         {
             TextComment = new Comments(message, null);
-
             _notificationService.Send(this, performer);
-            
-            return "success_res"; 
+            return "success_res";
         }
     }
-
 
     public class Task
     {
@@ -118,11 +115,9 @@ namespace TaskTrackerApp
         public string CurStatus { get; set; }
         public string Deadline { get; set; }
         public bool Expired { get; set; }
-
         public List<Performer> Performers { get; set; } = new List<Performer>();
-        public List<Comments> Comments { get; set; } = new List<Comments>();
+        public List<Comments> TaskComments { get; set; } = new List<Comments>();
         public List<HistoryOfTransitions> History { get; set; } = new List<HistoryOfTransitions>();
-
         private readonly INotificationService _notificationService;
 
         public Task(string title, string description, Performer author, string deadline, string status, INotificationService notificationService)
@@ -133,27 +128,23 @@ namespace TaskTrackerApp
             Deadline = deadline;
             Expired = false;
             _notificationService = notificationService;
-        }       
+        }
 
-        public bool  (Performer candidate)
+        public bool AssignPerform(Performer candidate)
         {
             Role role = candidate.GetRole();
             bool access = role.HasPermission("ExecuteTask");
-
             if (access)
             {
                 this.AddPerformer(candidate);
-
                 foreach (var performer in Performers)
                 {
                     Notifications notificate = new Notifications(_notificationService);
-                    string res = notificate.Send(performer, $"К задаче '{Name}' добавлен новый участник: {candidate.Name}.");
+                    string res = notificate.Send(performer, $"К задаче {Name} добавлен новый участник: {candidate.Name}.");
                 }
-
-                return true; 
+                return true;
             }
-
-            return false; 
+            return false;
         }
 
         private void AddPerformer(Performer candidate)
@@ -164,17 +155,15 @@ namespace TaskTrackerApp
             }
         }
 
-        public string CreateComment(string text, Performer author)
+        public bool CreateComment(string text, Performer author)
         {
-            bool isValid = ValidText(text); 
-
+            bool isValid = ValidText(text);
             if (isValid)
             {
                 Comments comment = new Comments(text, author);
-                Comments.Add(comment); 
+                TaskComments.Add(comment);
                 return true;
             }
-
             return false;
         }
 
@@ -193,14 +182,11 @@ namespace TaskTrackerApp
         public bool CreateTask(string title, string description, Performer author, string deadline, string status)
         {
             Task newTask = new Task(title, description, author, deadline, status, _notificationService);
-
             HistoryOfTransitions hisOfTran = new HistoryOfTransitions(status, author);
             newTask.History.Add(hisOfTran);
-
-            return true; 
+            return true;
         }
     }
-
 
     class Program
     {
@@ -212,16 +198,15 @@ namespace TaskTrackerApp
             Performer developerBob = new Performer("Боб (Разработчик)", "bob@company.com", developerRole);
 
             INotificationService currentNotificationWay = new TelegramBotNotification();
-
             TaskController controller = new TaskController(currentNotificationWay);
-
+            
             controller.CreateTask("Разработать модуль API", "Сделать интеграцию базы данных", manager, "2026-12-31", "New");
 
             Task currentTask = new Task("Разработать модуль API", "Сделать интеграцию базы данных", manager, "2026-12-31", "New", currentNotificationWay);
-            currentTask.Performers.Add(developerAlice); 
+            currentTask.Performers.Add(developerAlice);
 
-            Console.WriteLine("--- Попытка назначить Боба на задачу (Уведомления через Telegram) ---");
-            currentTask.AssignPerform(developerBob); 
+            Console.WriteLine("Попытка назначить Боба на задачу (Уведомления через Telegram)");
+            currentTask.AssignPerform(developerBob);
         }
     }
 }
